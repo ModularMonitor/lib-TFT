@@ -1,0 +1,436 @@
+[1mdiff --git a/Fonts/Font16.h b/Fonts/Font16.h[m
+[1mindex 0aa54a0..0c37b7b 100644[m
+[1m--- a/Fonts/Font16.h[m
+[1m+++ b/Fonts/Font16.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font16.c>[m
+[32m+[m[32m#include "Font16.c"[m
+ [m
+ #define nr_chrs_f16 96[m
+ #define chr_hgt_f16 16[m
+[1mdiff --git a/Fonts/Font32rle.h b/Fonts/Font32rle.h[m
+[1mindex 1dbdc69..d5627c7 100644[m
+[1m--- a/Fonts/Font32rle.h[m
+[1m+++ b/Fonts/Font32rle.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font32rle.c>[m
+[32m+[m[32m#include "Font32rle.c"[m
+ [m
+ #define nr_chrs_f32 96[m
+ #define chr_hgt_f32 26[m
+[1mdiff --git a/Fonts/Font64rle.h b/Fonts/Font64rle.h[m
+[1mindex 7f811f2..2e2ac86 100644[m
+[1m--- a/Fonts/Font64rle.h[m
+[1m+++ b/Fonts/Font64rle.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font64rle.c>[m
+[32m+[m[32m#include "Font64rle.c"[m
+ [m
+ #define nr_chrs_f64 96[m
+ #define chr_hgt_f64 48[m
+[1mdiff --git a/Fonts/Font72rle.h b/Fonts/Font72rle.h[m
+[1mindex 6e9d88f..654ec1c 100644[m
+[1m--- a/Fonts/Font72rle.h[m
+[1m+++ b/Fonts/Font72rle.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font72rle.c>[m
+[32m+[m[32m#include "Font72rle.c"[m
+ [m
+ #define nr_chrs_f72 96[m
+ #define chr_hgt_f72 75[m
+[1mdiff --git a/Fonts/Font72x53rle.h b/Fonts/Font72x53rle.h[m
+[1mindex b7ce1c9..f92e4ef 100644[m
+[1m--- a/Fonts/Font72x53rle.h[m
+[1m+++ b/Fonts/Font72x53rle.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font72x53rle.c>[m
+[32m+[m[32m#include "Font72x53rle.c"[m
+ [m
+ #define nr_chrs_f72 96[m
+ #define chr_hgt_f72 75[m
+[1mdiff --git a/Fonts/Font7srle.h b/Fonts/Font7srle.h[m
+[1mindex c02c663..4fdab7f 100644[m
+[1m--- a/Fonts/Font7srle.h[m
+[1m+++ b/Fonts/Font7srle.h[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <Fonts/Font7srle.c>[m
+[32m+[m[32m#include "Font7srle.c"[m
+ [m
+ #define nr_chrs_f7s 96[m
+ #define chr_hgt_f7s 48[m
+[1mdiff --git a/Fonts/GFXFF/gfxfont.h b/Fonts/GFXFF/gfxfont.h[m
+[1mindex 253f50c..1c3cc2e 100644[m
+[1m--- a/Fonts/GFXFF/gfxfont.h[m
+[1m+++ b/Fonts/GFXFF/gfxfont.h[m
+[36m@@ -12,7 +12,7 @@[m
+ #ifdef LOAD_GFXFF[m
+ [m
+ typedef struct { // Data stored PER GLYPH[m
+[31m-	uint32_t bitmapOffset;     // Pointer into GFXfont->bitmap[m
+[32m+[m	[32muint32_t bitmapOffset;     // Pointer into GFXfont-"bitmap[m
+ 	uint8_t  width, height;    // Bitmap dimensions in pixels[m
+ 	uint8_t  xAdvance;         // Distance to advance cursor (x axis)[m
+ 	int8_t   xOffset, yOffset; // Dist from cursor pos to UL corner[m
+[36m@@ -26,69 +26,69 @@[m [mtypedef struct { // Data stored for FONT AS A WHOLE:[m
+ } GFXfont;[m
+ [m
+   // Original Adafruit_GFX "Free Fonts"[m
+[31m-  #include <Fonts/GFXFF/TomThumb.h>  // TT1[m
+[32m+[m[32m  #include "TomThumb.h"  // TT1[m
+ [m
+[31m-  #include <Fonts/GFXFF/FreeMono9pt7b.h>  // FF1 or FM9[m
+[31m-  #include <Fonts/GFXFF/FreeMono12pt7b.h> // FF2 or FM12[m
+[31m-  #include <Fonts/GFXFF/FreeMono18pt7b.h> // FF3 or FM18[m
+[31m-  #include <Fonts/GFXFF/FreeMono24pt7b.h> // FF4 or FM24[m
+[32m+[m[32m  #include "FreeMono9pt7b.h"  // FF1 or FM9[m
+[32m+[m[32m  #include "FreeMono12pt7b.h" // FF2 or FM12[m
+[32m+[m[32m  #include "FreeMono18pt7b.h" // FF3 or FM18[m
+[32m+[m[32m  #include "FreeMono24pt7b.h" // FF4 or FM24[m
+ [m
+[31m-  #include <Fonts/GFXFF/FreeMonoOblique9pt7b.h>  // FF5 or FMO9[m
+[31m-  #include <Fonts/GFXFF/FreeMonoOblique12pt7b.h> // FF6 or FMO12[m
+[31m-  #include <Fonts/GFXFF/FreeMonoOblique18pt7b.h> // FF7 or FMO18[m
+[31m-  #include <Fonts/GFXFF/FreeMonoOblique24pt7b.h> // FF8 or FMO24[m
+[32m+[m[32m  #include "FreeMonoOblique9pt7b.h"  // FF5 or FMO9[m
+[32m+[m[32m  #include "FreeMonoOblique12pt7b.h" // FF6 or FMO12[m
+[32m+[m[32m  #include "FreeMonoOblique18pt7b.h" // FF7 or FMO18[m
+[32m+[m[32m  #include "FreeMonoOblique24pt7b.h" // FF8 or FMO24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeMonoBold9pt7b.h>  // FF9  or FMB9[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBold12pt7b.h> // FF10 or FMB12[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBold18pt7b.h> // FF11 or FMB18[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBold24pt7b.h> // FF12 or FMB24[m
+[32m+[m[32m  #include "FreeMonoBold9pt7b.h"  // FF9  or FMB9[m
+[32m+[m[32m  #include "FreeMonoBold12pt7b.h" // FF10 or FMB12[m
+[32m+[m[32m  #include "FreeMonoBold18pt7b.h" // FF11 or FMB18[m
+[32m+[m[32m  #include "FreeMonoBold24pt7b.h" // FF12 or FMB24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeMonoBoldOblique9pt7b.h>  // FF13 or FMBO9[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBoldOblique12pt7b.h> // FF14 or FMBO12[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBoldOblique18pt7b.h> // FF15 or FMBO18[m
+[31m-  #include <Fonts/GFXFF/FreeMonoBoldOblique24pt7b.h> // FF16 or FMBO24[m
+[32m+[m[32m  #include "FreeMonoBoldOblique9pt7b.h"  // FF13 or FMBO9[m
+[32m+[m[32m  #include "FreeMonoBoldOblique12pt7b.h" // FF14 or FMBO12[m
+[32m+[m[32m  #include "FreeMonoBoldOblique18pt7b.h" // FF15 or FMBO18[m
+[32m+[m[32m  #include "FreeMonoBoldOblique24pt7b.h" // FF16 or FMBO24[m
+   [m
+   // Sans serif fonts[m
+[31m-  #include <Fonts/GFXFF/FreeSans9pt7b.h>  // FF17 or FSS9[m
+[31m-  #include <Fonts/GFXFF/FreeSans12pt7b.h> // FF18 or FSS12[m
+[31m-  #include <Fonts/GFXFF/FreeSans18pt7b.h> // FF19 or FSS18[m
+[31m-  #include <Fonts/GFXFF/FreeSans24pt7b.h> // FF20 or FSS24[m
+[32m+[m[32m  #include "FreeSans9pt7b.h"  // FF17 or FSS9[m
+[32m+[m[32m  #include "FreeSans12pt7b.h" // FF18 or FSS12[m
+[32m+[m[32m  #include "FreeSans18pt7b.h" // FF19 or FSS18[m
+[32m+[m[32m  #include "FreeSans24pt7b.h" // FF20 or FSS24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSansOblique9pt7b.h>  // FF21 or FSSO9[m
+[31m-  #include <Fonts/GFXFF/FreeSansOblique12pt7b.h> // FF22 or FSSO12[m
+[31m-  #include <Fonts/GFXFF/FreeSansOblique18pt7b.h> // FF23 or FSSO18[m
+[31m-  #include <Fonts/GFXFF/FreeSansOblique24pt7b.h> // FF24 or FSSO24[m
+[32m+[m[32m  #include "FreeSansOblique9pt7b.h"  // FF21 or FSSO9[m
+[32m+[m[32m  #include "FreeSansOblique12pt7b.h" // FF22 or FSSO12[m
+[32m+[m[32m  #include "FreeSansOblique18pt7b.h" // FF23 or FSSO18[m
+[32m+[m[32m  #include "FreeSansOblique24pt7b.h" // FF24 or FSSO24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSansBold9pt7b.h>  // FF25 or FSSB9[m
+[31m-  #include <Fonts/GFXFF/FreeSansBold12pt7b.h> // FF26 or FSSB12[m
+[31m-  #include <Fonts/GFXFF/FreeSansBold18pt7b.h> // FF27 or FSSB18[m
+[31m-  #include <Fonts/GFXFF/FreeSansBold24pt7b.h> // FF28 or FSSB24[m
+[32m+[m[32m  #include "FreeSansBold9pt7b.h"  // FF25 or FSSB9[m
+[32m+[m[32m  #include "FreeSansBold12pt7b.h" // FF26 or FSSB12[m
+[32m+[m[32m  #include "FreeSansBold18pt7b.h" // FF27 or FSSB18[m
+[32m+[m[32m  #include "FreeSansBold24pt7b.h" // FF28 or FSSB24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSansBoldOblique9pt7b.h>  // FF29 or FSSBO9[m
+[31m-  #include <Fonts/GFXFF/FreeSansBoldOblique12pt7b.h> // FF30 or FSSBO12[m
+[31m-  #include <Fonts/GFXFF/FreeSansBoldOblique18pt7b.h> // FF31 or FSSBO18[m
+[31m-  #include <Fonts/GFXFF/FreeSansBoldOblique24pt7b.h> // FF32 or FSSBO24[m
+[32m+[m[32m  #include "FreeSansBoldOblique9pt7b.h"  // FF29 or FSSBO9[m
+[32m+[m[32m  #include "FreeSansBoldOblique12pt7b.h" // FF30 or FSSBO12[m
+[32m+[m[32m  #include "FreeSansBoldOblique18pt7b.h" // FF31 or FSSBO18[m
+[32m+[m[32m  #include "FreeSansBoldOblique24pt7b.h" // FF32 or FSSBO24[m
+   [m
+   // Serif fonts[m
+[31m-  #include <Fonts/GFXFF/FreeSerif9pt7b.h>  // FF33 or FS9[m
+[31m-  #include <Fonts/GFXFF/FreeSerif12pt7b.h> // FF34 or FS12[m
+[31m-  #include <Fonts/GFXFF/FreeSerif18pt7b.h> // FF35 or FS18[m
+[31m-  #include <Fonts/GFXFF/FreeSerif24pt7b.h> // FF36 or FS24[m
+[32m+[m[32m  #include "FreeSerif9pt7b.h"  // FF33 or FS9[m
+[32m+[m[32m  #include "FreeSerif12pt7b.h" // FF34 or FS12[m
+[32m+[m[32m  #include "FreeSerif18pt7b.h" // FF35 or FS18[m
+[32m+[m[32m  #include "FreeSerif24pt7b.h" // FF36 or FS24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSerifItalic9pt7b.h>  // FF37 or FSI9[m
+[31m-  #include <Fonts/GFXFF/FreeSerifItalic12pt7b.h> // FF38 or FSI12[m
+[31m-  #include <Fonts/GFXFF/FreeSerifItalic18pt7b.h> // FF39 or FSI18[m
+[31m-  #include <Fonts/GFXFF/FreeSerifItalic24pt7b.h> // FF40 or FSI24[m
+[32m+[m[32m  #include "FreeSerifItalic9pt7b.h"  // FF37 or FSI9[m
+[32m+[m[32m  #include "FreeSerifItalic12pt7b.h" // FF38 or FSI12[m
+[32m+[m[32m  #include "FreeSerifItalic18pt7b.h" // FF39 or FSI18[m
+[32m+[m[32m  #include "FreeSerifItalic24pt7b.h" // FF40 or FSI24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSerifBold9pt7b.h>  // FF41 or FSB9[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBold12pt7b.h> // FF42 or FSB12[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBold18pt7b.h> // FF43 or FSB18[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBold24pt7b.h> // FF44 or FSB24[m
+[32m+[m[32m  #include "FreeSerifBold9pt7b.h"  // FF41 or FSB9[m
+[32m+[m[32m  #include "FreeSerifBold12pt7b.h" // FF42 or FSB12[m
+[32m+[m[32m  #include "FreeSerifBold18pt7b.h" // FF43 or FSB18[m
+[32m+[m[32m  #include "FreeSerifBold24pt7b.h" // FF44 or FSB24[m
+   [m
+[31m-  #include <Fonts/GFXFF/FreeSerifBoldItalic9pt7b.h>  // FF45 or FSBI9[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBoldItalic12pt7b.h> // FF46 or FSBI12[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBoldItalic18pt7b.h> // FF47 or FSBI18[m
+[31m-  #include <Fonts/GFXFF/FreeSerifBoldItalic24pt7b.h> // FF48 or FSBI24[m
+[32m+[m[32m  #include "FreeSerifBoldItalic9pt7b.h"  // FF45 or FSBI9[m
+[32m+[m[32m  #include "FreeSerifBoldItalic12pt7b.h" // FF46 or FSBI12[m
+[32m+[m[32m  #include "FreeSerifBoldItalic18pt7b.h" // FF47 or FSBI18[m
+[32m+[m[32m  #include "FreeSerifBoldItalic24pt7b.h" // FF48 or FSBI24[m
+ [m
+ #endif // LOAD_GFXFF[m
+ [m
+[1mdiff --git a/TFT_eSPI.h b/TFT_eSPI.h[m
+[1mindex 8ae2342..1f22239 100644[m
+[1m--- a/TFT_eSPI.h[m
+[1m+++ b/TFT_eSPI.h[m
+[36m@@ -56,9 +56,9 @@[m
+     #warning Compiler does not support __has_include, so sketches cannot define the setup[m
+   #endif[m
+ #else[m
+[31m-  #if __has_include(<tft_setup.h>)[m
+[32m+[m[32m  #if __has_include("tft_setup.h")[m
+     // Include the sketch setup file[m
+[31m-    #include <tft_setup.h>[m
+[32m+[m[32m    #include "tft_setup.h"[m
+     #ifndef USER_SETUP_LOADED[m
+       // Prevent loading further setups[m
+       #define USER_SETUP_LOADED[m
+[36m@@ -66,7 +66,7 @@[m
+   #endif[m
+ #endif[m
+ [m
+[31m-#include <User_Setup_Select.h>[m
+[32m+[m[32m#include "User_Setup_Select.h"[m
+ [m
+ // Handle FLASH based storage e.g. PROGMEM[m
+ #if defined(ARDUINO_ARCH_RP2040)[m
+[36m@@ -170,40 +170,40 @@[m
+ // Only load the fonts defined in User_Setup.h (to save space)[m
+ // Set flag so RLE rendering code is optionally compiled[m
+ #ifdef LOAD_GLCD[m
+[31m-  #include <Fonts/glcdfont.c>[m
+[32m+[m[32m  #include "Fonts/glcdfont.c"[m
+ #endif[m
+ [m
+ #ifdef LOAD_FONT2[m
+[31m-  #include <Fonts/Font16.h>[m
+[32m+[m[32m  #include "Fonts/Font16.h"[m
+ #endif[m
+ [m
+ #ifdef LOAD_FONT4[m
+[31m-  #include <Fonts/Font32rle.h>[m
+[32m+[m[32m  #include "Fonts/Font32rle.h"[m
+   #define LOAD_RLE[m
+ #endif[m
+ [m
+ #ifdef LOAD_FONT6[m
+[31m-  #include <Fonts/Font64rle.h>[m
+[32m+[m[32m  #include "Fonts/Font64rle.h"[m
+   #ifndef LOAD_RLE[m
+     #define LOAD_RLE[m
+   #endif[m
+ #endif[m
+ [m
+ #ifdef LOAD_FONT7[m
+[31m-  #include <Fonts/Font7srle.h>[m
+[32m+[m[32m  #include "Fonts/Font7srle.h"[m
+   #ifndef LOAD_RLE[m
+     #define LOAD_RLE[m
+   #endif[m
+ #endif[m
+ [m
+ #ifdef LOAD_FONT8[m
+[31m-  #include <Fonts/Font72rle.h>[m
+[32m+[m[32m  #include "Fonts/Font72rle.h"[m
+   #ifndef LOAD_RLE[m
+     #define LOAD_RLE[m
+   #endif[m
+ #elif defined LOAD_FONT8N // Optional narrower version[m
+   #define LOAD_FONT8[m
+[31m-  #include <Fonts/Font72x53rle.h>[m
+[32m+[m[32m  #include "Fonts/Font72x53rle.h"[m
+   #ifndef LOAD_RLE[m
+     #define LOAD_RLE[m
+   #endif[m
+[36m@@ -212,9 +212,9 @@[m
+ #ifdef LOAD_GFXFF[m
+   // We can include all the free fonts and they will only be built into[m
+   // the sketch if they are used[m
+[31m-  #include <Fonts/GFXFF/gfxfont.h>[m
+[32m+[m[32m  #include "Fonts/GFXFF/gfxfont.h"[m
+   // Call up any user custom fonts[m
+[31m-  #include <User_Setups/User_Custom_Fonts.h>[m
+[32m+[m[32m  #include "User_Setups/User_Custom_Fonts.h"[m
+ #endif // #ifdef LOAD_GFXFF[m
+ [m
+ // Create a null default font in case some fonts not used (to prevent crash)[m
+[36m@@ -1009,3 +1009,5 @@[m [mfastBlend(A alpha, F fgc, B bgc)[m
+ #include "Extensions/Sprite.h"[m
+ [m
+ #endif // ends #ifndef _TFT_eSPIH_[m
+[32m+[m
+[32m+[m[32m#include "TFT_eSPI.ipp"[m
+\ No newline at end of file[m
+[1mdiff --git a/TFT_eSPI.cpp b/TFT_eSPI.ipp[m
+[1msimilarity index 99%[m
+[1mrename from TFT_eSPI.cpp[m
+[1mrename to TFT_eSPI.ipp[m
+[1mindex d537fae..2ae744b 100644[m
+[1m--- a/TFT_eSPI.cpp[m
+[1m+++ b/TFT_eSPI.ipp[m
+[36m@@ -12,6 +12,7 @@[m
+   Created by Bodmer 2/12/16[m
+   Last update by Bodmer 20/03/20[m
+  ****************************************************/[m
+[32m+[m[32m#pragma once[m
+ [m
+ #include "TFT_eSPI.h"[m
+ [m
+[1mdiff --git a/User_Setup.h b/User_Setup.h[m
+[1mindex a012331..c8f9092 100644[m
+[1m--- a/User_Setup.h[m
+[1m+++ b/User_Setup.h[m
+[36m@@ -42,7 +42,7 @@[m
+ //#define RPI_DISPLAY_TYPE // 20MHz maximum SPI[m
+ [m
+ // Only define one driver, the other ones must be commented out[m
+[31m-#define ILI9341_DRIVER       // Generic driver for common displays[m
+[32m+[m[32m//#define ILI9341_DRIVER       // Generic driver for common displays[m
+ //#define ILI9341_2_DRIVER     // Alternative ILI9341 driver, see https://github.com/Bodmer/TFT_eSPI/issues/1172[m
+ //#define ST7735_DRIVER      // Define additional parameters below for this display[m
+ //#define ILI9163_DRIVER     // Define additional parameters below for this display[m
+[36m@@ -51,7 +51,7 @@[m
+ //#define HX8357D_DRIVER[m
+ //#define ILI9481_DRIVER[m
+ //#define ILI9486_DRIVER[m
+[31m-//#define ILI9488_DRIVER     // WARNING: Do not connect ILI9488 display SDO to MISO if other devices share the SPI bus (TFT SDO does NOT tristate when CS is high)[m
+[32m+[m[32m#define ILI9488_DRIVER     // WARNING: Do not connect ILI9488 display SDO to MISO if other devices share the SPI bus (TFT SDO does NOT tristate when CS is high)[m
+ //#define ST7789_DRIVER      // Full configuration option, define additional parameters below for this display[m
+ //#define ST7789_2_DRIVER    // Minimal configuration option, define additional parameters below for this display[m
+ //#define R61581_DRIVER[m
+[36m@@ -68,7 +68,7 @@[m
+ // bi-directional SDA pin and the library will try to read this via the MOSI line.[m
+ // To use the SDA line for reading data from the TFT uncomment the following line:[m
+ [m
+[31m-// #define TFT_SDA_READ      // This option is for ESP32 ONLY, tested with ST7789 and GC9A01 display only[m
+[32m+[m[32m //#define TFT_SDA_READ      // This option is for ESP32 ONLY, tested with ST7789 and GC9A01 display only[m
+ [m
+ // For ST7735, ST7789 and ILI9341 ONLY, define the colour order IF the blue and red are swapped on your display[m
+ // Try ONE option at a time to find the correct colour order for your display[m
+[36m@@ -167,13 +167,13 @@[m
+ // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP8266 SETUP ######[m
+ [m
+ // For NodeMCU - use pin numbers in the form PIN_Dx where Dx is the NodeMCU pin designation[m
+[31m-#define TFT_MISO  PIN_D6  // Automatically assigned with ESP8266 if not defined[m
+[31m-#define TFT_MOSI  PIN_D7  // Automatically assigned with ESP8266 if not defined[m
+[31m-#define TFT_SCLK  PIN_D5  // Automatically assigned with ESP8266 if not defined[m
+[31m-[m
+[31m-#define TFT_CS    PIN_D8  // Chip select control pin D8[m
+[31m-#define TFT_DC    PIN_D3  // Data Command control pin[m
+[31m-#define TFT_RST   PIN_D4  // Reset pin (could connect to NodeMCU RST, see next line)[m
+[32m+[m[32m//#define TFT_MISO  PIN_D6  // Automatically assigned with ESP8266 if not defined[m
+[32m+[m[32m//#define TFT_MOSI  PIN_D7  // Automatically assigned with ESP8266 if not defined[m
+[32m+[m[32m//#define TFT_SCLK  PIN_D5  // Automatically assigned with ESP8266 if not defined[m
+[32m+[m[32m//[m
+[32m+[m[32m//#define TFT_CS    PIN_D8  // Chip select control pin D8[m
+[32m+[m[32m//#define TFT_DC    PIN_D3  // Data Command control pin[m
+[32m+[m[32m//#define TFT_RST   PIN_D4  // Reset pin (could connect to NodeMCU RST, see next line)[m
+ //#define TFT_RST  -1     // Set TFT_RST to -1 if the display RESET is connected to NodeMCU RST or 3.3V[m
+ [m
+ [m
+[36m@@ -366,7 +366,7 @@[m
+ // #define SPI_FREQUENCY  80000000[m
+ [m
+ // Optional reduced SPI frequency for reading TFT[m
+[31m-#define SPI_READ_FREQUENCY  20000000[m
+[32m+[m[32m//#define SPI_READ_FREQUENCY  20000000[m
+ [m
+ // The XPT2046 requires a lower SPI clock rate of 2.5MHz so we define that here:[m
+ #define SPI_TOUCH_FREQUENCY  2500000[m
+[1mdiff --git a/User_Setup_Select.h b/User_Setup_Select.h[m
+[1mindex 6a51639..e6fd901 100644[m
+[1m--- a/User_Setup_Select.h[m
+[1m+++ b/User_Setup_Select.h[m
+[36m@@ -24,138 +24,138 @@[m
+ [m
+ // Only ONE line below should be uncommented to define your setup.  Add extra lines and files as needed.[m
+ [m
+[31m-#include <User_Setup.h>           // Default setup is root library folder[m
+[32m+[m[32m#include "User_Setup.h"           // Default setup is root library folder[m
+ [m
+[31m-//#include <User_Setups/Setup1_ILI9341.h>  // Setup file for ESP8266 configured for my ILI9341[m
+[31m-//#include <User_Setups/Setup2_ST7735.h>   // Setup file for ESP8266 configured for my ST7735[m
+[31m-//#include <User_Setups/Setup3_ILI9163.h>  // Setup file for ESP8266 configured for my ILI9163[m
+[31m-//#include <User_Setups/Setup4_S6D02A1.h>  // Setup file for ESP8266 configured for my S6D02A1[m
+[31m-//#include <User_Setups/Setup5_RPi_ILI9486.h>        // Setup file for ESP8266 configured for my stock RPi TFT[m
+[31m-//#include <User_Setups/Setup6_RPi_Wr_ILI9486.h>     // Setup file for ESP8266 configured for my modified RPi TFT[m
+[31m-//#include <User_Setups/Setup7_ST7735_128x128.h>     // Setup file for ESP8266 configured for my ST7735 128x128 display[m
+[31m-//#include <User_Setups/Setup8_ILI9163_128x128.h>    // Setup file for ESP8266 configured for my ILI9163 128x128 display[m
+[31m-//#include <User_Setups/Setup9_ST7735_Overlap.h>     // Setup file for ESP8266 configured for my ST7735[m
+[31m-//#include <User_Setups/Setup10_RPi_touch_ILI9486.h> // Setup file for ESP8266 configured for ESP8266 and RPi TFT with touch[m
+[32m+[m[32m//#include "User_Setups/Setup1_ILI9341.h"  // Setup file for ESP8266 configured for my ILI9341[m
+[32m+[m[32m//#include "User_Setups/Setup2_ST7735.h"   // Setup file for ESP8266 configured for my ST7735[m
+[32m+[m[32m//#include "User_Setups/Setup3_ILI9163.h"  // Setup file for ESP8266 configured for my ILI9163[m
+[32m+[m[32m//#include "User_Setups/Setup4_S6D02A1.h"  // Setup file for ESP8266 configured for my S6D02A1[m
+[32m+[m[32m//#include "User_Setups/Setup5_RPi_ILI9486.h"        // Setup file for ESP8266 configured for my stock RPi TFT[m
+[32m+[m[32m//#include "User_Setups/Setup6_RPi_Wr_ILI9486.h"     // Setup file for ESP8266 configured for my modified RPi TFT[m
+[32m+[m[32m//#include "User_Setups/Setup7_ST7735_128x128.h"     // Setup file for ESP8266 configured for my ST7735 128x128 display[m
+[32m+[m[32m//#include "User_Setups/Setup8_ILI9163_128x128.h"    // Setup file for ESP8266 configured for my ILI9163 128x128 display[m
+[32m+[m[32m//#include "User_Setups/Setup9_ST7735_Overlap.h"     // Setup file for ESP8266 configured for my ST7735[m
+[32m+[m[32m//#include "User_Setups/Setup10_RPi_touch_ILI9486.h" // Setup file for ESP8266 configured for ESP8266 and RPi TFT with touch[m
+ [m
+[31m-//#include <User_Setups/Setup11_RPi_touch_ILI9486.h> // Setup file configured for ESP32 and RPi TFT with touch[m
+[31m-//#include <User_Setups/Setup12_M5Stack_Basic_Core.h>// Setup file for the ESP32 based M5Stack (Basic Core only)[m
+[31m-//#include <User_Setups/Setup13_ILI9481_Parallel.h>  // Setup file for the ESP32 with parallel bus TFT[m
+[31m-//#include <User_Setups/Setup14_ILI9341_Parallel.h>  // Setup file for the ESP32 with parallel bus TFT[m
+[31m-//#include <User_Setups/Setup15_HX8357D.h>           // Setup file for ESP8266 configured for HX8357D[m
+[31m-//#include <User_Setups/Setup16_ILI9488_Parallel.h>  // Setup file for the ESP32 with parallel bus TFT[m
+[31m-//#include <User_Setups/Setup17_ePaper.h>            // Setup file for ESP8266 and any Waveshare ePaper display[m
+[31m-//#include <User_Setups/Setup18_ST7789.h>            // Setup file for ESP8266 configured for ST7789[m
+[32m+[m[32m//#include "User_Setups/Setup11_RPi_touch_ILI9486.h" // Setup file configured for ESP32 and RPi TFT with touch[m
+[32m+[m[32m//#include "User_Setups/Setup12_M5Stack_Basic_Core.h"// Setup file for the ESP32 based M5Stack (Basic Core only)[m
+[32m+[m[32m//#include "User_Setups/Setup13_ILI9481_Parallel.h"  // Setup file for the ESP32 with parallel bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup14_ILI9341_Parallel.h"  // Setup file for the ESP32 with parallel bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup15_HX8357D.h"           // Setup file for ESP8266 configured for HX8357D[m
+[32m+[m[32m//#include "User_Setups/Setup16_ILI9488_Parallel.h"  // Setup file for the ESP32 with parallel bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup17_ePaper.h"            // Setup file for ESP8266 and any Waveshare ePaper display[m
+[32m+[m[32m//#include "User_Setups/Setup18_ST7789.h"            // Setup file for ESP8266 configured for ST7789[m
+ [m
+[31m-//#include <User_Setups/Setup19_RM68140_Parallel.h>	 // Setup file configured for RM68140 with parallel bus[m
+[32m+[m[32m//#include "User_Setups/Setup19_RM68140_Parallel.h"	 // Setup file configured for RM68140 with parallel bus[m
+ [m
+[31m-//#include <User_Setups/Setup20_ILI9488.h>           // Setup file for ESP8266 and ILI9488 SPI bus TFT[m
+[31m-//#include <User_Setups/Setup21_ILI9488.h>           // Setup file for ESP32 and ILI9488 SPI bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup20_ILI9488.h"           // Setup file for ESP8266 and ILI9488 SPI bus TFT[m
+[32m+[m[32m#include "User_Setups/Setup21_ILI9488.h"           // Setup file for ESP32 and ILI9488 SPI bus TFT[m
+ [m
+[31m-//#include <User_Setups/Setup22_TTGO_T4.h>           // Setup file for ESP32 and TTGO T4 version 1.2[m
+[31m-//#include <User_Setups/Setup22_TTGO_T4_v1.3.h>      // Setup file for ESP32 and TTGO T4 version 1.3[m
+[31m-//#include <User_Setups/Setup23_TTGO_TM.h>           // Setup file for ESP32 and TTGO TM ST7789 SPI bus TFT[m
+[31m-//#include <User_Setups/Setup24_ST7789.h>            // Setup file for DSTIKE/ESP32/ESP8266 configured for ST7789 240 x 240[m
+[31m-//#include <User_Setups/Setup25_TTGO_T_Display.h>    // Setup file for ESP32 and TTGO T-Display ST7789V SPI bus TFT[m
+[31m-//#include <User_Setups/Setup26_TTGO_T_Wristband.h>  // Setup file for ESP32 and TTGO T-Wristband ST7735 SPI bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup22_TTGO_T4.h"           // Setup file for ESP32 and TTGO T4 version 1.2[m
+[32m+[m[32m//#include "User_Setups/Setup22_TTGO_T4_v1.3.h"      // Setup file for ESP32 and TTGO T4 version 1.3[m
+[32m+[m[32m//#include "User_Setups/Setup23_TTGO_TM.h"           // Setup file for ESP32 and TTGO TM ST7789 SPI bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup24_ST7789.h"            // Setup file for DSTIKE/ESP32/ESP8266 configured for ST7789 240 x 240[m
+[32m+[m[32m//#include "User_Setups/Setup25_TTGO_T_Display.h"    // Setup file for ESP32 and TTGO T-Display ST7789V SPI bus TFT[m
+[32m+[m[32m//#include "User_Setups/Setup26_TTGO_T_Wristband.h"  // Setup file for ESP32 and TTGO T-Wristband ST7735 SPI bus TFT[m
+ [m
+[31m-//#include <User_Setups/Setup27_RPi_ST7796_ESP32.h>    // ESP32   RPi MHS-4.0 inch Display-B[m
+[31m-//#include <User_Setups/Setup28_RPi_ST7796_ESP8266.h>  // ESP8266 RPi MHS-4.0 inch Display-B[m
+[32m+[m[32m//#include "User_Setups/Setup27_RPi_ST7796_ESP32.h"    // ESP32   RPi MHS-4.0 inch Display-B[m
+[32m+[m[32m//#include "User_Setups/Setup28_RPi_ST7796_ESP8266.h"  // ESP8266 RPi MHS-4.0 inch Display-B[m
+ [m
+[31m-//#include <User_Setups/Setup29_ILI9341_STM32.
