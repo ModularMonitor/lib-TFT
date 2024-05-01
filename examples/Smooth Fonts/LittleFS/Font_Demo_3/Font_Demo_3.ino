@@ -38,7 +38,7 @@
 #define FlashFS LittleFS
 
 #include <SPI.h>
-#include <TFT_eSPI.h>       // Hardware-specific library
+#include "TFT_eSPI.h"       // Hardware-specific library
 
 TFT_eSPI    tft = TFT_eSPI();
 TFT_eSprite spr = TFT_eSprite(&tft); // Sprite class needs to be invoked

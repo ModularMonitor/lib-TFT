@@ -42,7 +42,7 @@
 
 Epd ePaper;                             // Create an instance ePaper
 
-#include <TFT_eSPI.h>                   // Graphics library and Sprite class
+#include "TFT_eSPI.h"                   // Graphics library and Sprite class
 
 TFT_eSPI      glc = TFT_eSPI();         // Invoke the graphics library class
 TFT_eSprite frame = TFT_eSprite(&glc);  // Invoke the Sprite class for the image frame buffer

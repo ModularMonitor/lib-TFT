@@ -14,7 +14,7 @@
   https://github.com/Bodmer/TFT_eWidget
 */
 
-#include <TFT_eSPI.h>     // Hardware-specific library
+#include "TFT_eSPI.h"     // Hardware-specific library
 #include <TFT_eWidget.h>  // Widget library
 
 TFT_eSPI tft  = TFT_eSPI();      // Invoke custom library

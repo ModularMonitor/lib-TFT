@@ -45,7 +45,7 @@
 // 358 is max for 128x128 sprite, too big and pixel trails are drawn...
 #define CUBE_SIZE 358
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 
 // Library instance
 TFT_eSPI    tft = TFT_eSPI();         // Declare object "tft"

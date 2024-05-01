@@ -40,7 +40,7 @@
 */
 
 #include <SPI.h>
-#include <TFT_eSPI.h> // Hardware-specific library
+#include "TFT_eSPI.h" // Hardware-specific library
 
 // Enable ONE of these #includes for the various eyes:
 #include "defaultEye.h"        // Standard human-ish hazel eye

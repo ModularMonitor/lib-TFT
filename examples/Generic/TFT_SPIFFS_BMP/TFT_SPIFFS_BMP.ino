@@ -24,7 +24,7 @@
 #endif
 
 // Call up the TFT library
-#include <TFT_eSPI.h> // Hardware-specific library for ESP8266
+#include "TFT_eSPI.h" // Hardware-specific library for ESP8266
 
 // Invoke TFT library
 TFT_eSPI tft = TFT_eSPI();

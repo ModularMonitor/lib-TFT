@@ -15,7 +15,7 @@
 //>>>>> Note: STM32 pin references above D15 may not reflect board markings <<<<<
 
 #include <SPI.h>
-#include <TFT_eSPI.h>      // Graphics library
+#include "TFT_eSPI.h"      // Graphics library
 
 TFT_eSPI tft = TFT_eSPI(); // Invoke library
 

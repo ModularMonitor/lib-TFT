@@ -28,7 +28,7 @@ int16_t ypos = 0;
 
 // Include the TFT library https://github.com/Bodmer/TFT_eSPI
 #include "SPI.h"
-#include <TFT_eSPI.h>              // Hardware-specific library
+#include "TFT_eSPI.h"              // Hardware-specific library
 TFT_eSPI tft = TFT_eSPI();         // Invoke custom library
 
 //====================================================================================

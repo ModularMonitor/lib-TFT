@@ -33,7 +33,7 @@ code	color
 
  */
 
-#include <TFT_eSPI.h> // Hardware-specific library
+#include "TFT_eSPI.h" // Hardware-specific library
 #include <SPI.h>
 
 #define TFT_GREY 0x5AEB

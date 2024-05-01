@@ -32,7 +32,7 @@
 #define WIDTH  128
 #define HEIGHT 128
 
-#include <TFT_eSPI.h>                 // Include the graphics library (this includes the sprite functions)
+#include "TFT_eSPI.h"                 // Include the graphics library (this includes the sprite functions)
 
 TFT_eSPI    tft = TFT_eSPI();         // Declare object "tft"
 

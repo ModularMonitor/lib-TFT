@@ -27,7 +27,7 @@
 // Created by Bodmer 6/1/19 as an example to the TFT_eSPI library:
 // https://github.com/Bodmer/TFT_eSPI
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 
 TFT_eSPI tft = TFT_eSPI();           // TFT object
 

@@ -7,7 +7,7 @@
 
 #include "Free_Fonts.h" // Include the header file attached to this sketch
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 #include <TFT_eWidget.h>           // Widget library
 
 TFT_eSPI tft = TFT_eSPI();

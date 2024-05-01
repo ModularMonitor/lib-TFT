@@ -16,7 +16,7 @@ Updated by Bodmer for variable meter size
 // Define meter size as 1 for tft.rotation(0) or 1.3333 for tft.rotation(1)
 #define M_SIZE 1.3333
 
-#include <TFT_eSPI.h> // Hardware-specific library
+#include "TFT_eSPI.h" // Hardware-specific library
 #include <SPI.h>
 
 TFT_eSPI tft = TFT_eSPI();       // Invoke custom library

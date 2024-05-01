@@ -28,7 +28,7 @@
 #include <SD.h>
 
 // Graphics and font library
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 #include <SPI.h>
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke library

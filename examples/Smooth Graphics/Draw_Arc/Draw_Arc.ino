@@ -7,7 +7,7 @@
 // The sides of the arc can optionally be smooth or not. Smooth arcs have
 // a much better appearance, especially at small sizes.
 
-#include <TFT_eSPI.h>       // Include the graphics library
+#include "TFT_eSPI.h"       // Include the graphics library
 TFT_eSPI tft = TFT_eSPI();  // Create object "tft"
 
 // -------------------------------------------------------------------------

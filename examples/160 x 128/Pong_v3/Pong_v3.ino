@@ -8,7 +8,7 @@
 #define WHITE 0xFFFF
 #define GREY  0x5AEB
 
-#include <TFT_eSPI.h> // Graphics and font library for ST7735 driver chip
+#include "TFT_eSPI.h" // Graphics and font library for ST7735 driver chip
 #include <SPI.h>
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h

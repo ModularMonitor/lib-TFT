@@ -30,7 +30,7 @@
 #include "NotoSansBold36.h"
 #define AA_FONT_LARGE NotoSansBold36
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 TFT_eSPI tft = TFT_eSPI();
 TFT_eSprite needle = TFT_eSprite(&tft); // Sprite object for needle
 TFT_eSprite spr    = TFT_eSprite(&tft); // Sprite for meter reading

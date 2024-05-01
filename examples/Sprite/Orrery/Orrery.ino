@@ -7,7 +7,7 @@
 // Sketch coded by Bodmer
 // Uses astronomy engine created by Don Cross
 
-#include <TFT_eSPI.h>                 // Hardware-specific library
+#include "TFT_eSPI.h"                 // Hardware-specific library
 
 TFT_eSPI    tft = TFT_eSPI();         // Invoke library
 

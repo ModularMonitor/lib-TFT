@@ -6,7 +6,7 @@
 // for each pixel so rendering will be quite slow.
 // For best performance use a Teensy 4.x (600MHz CPU clock).
 
-#include <TFT_eSPI.h>       // Hardware-specific library
+#include "TFT_eSPI.h"       // Hardware-specific library
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke custom library
 

@@ -18,7 +18,7 @@
  */
 
 
-#include <TFT_eSPI.h> // Graphics and font library for ILI9341 driver chip
+#include "TFT_eSPI.h" // Graphics and font library for ILI9341 driver chip
 #include <SPI.h>
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h

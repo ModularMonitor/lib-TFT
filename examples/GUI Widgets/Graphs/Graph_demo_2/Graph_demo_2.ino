@@ -5,7 +5,7 @@
 // Requires widget library here:
 // https://github.com/Bodmer/TFT_eWidget
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 TFT_eSPI tft = TFT_eSPI();
 
 #include <TFT_eWidget.h>               // Widget library

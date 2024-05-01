@@ -11,7 +11,7 @@
 
 #include "xbm.h"             // Sketch tab header for xbm images
 
-#include <TFT_eSPI.h>        // Hardware-specific library
+#include "TFT_eSPI.h"        // Hardware-specific library
 
 TFT_eSPI tft = TFT_eSPI();   // Invoke library
 

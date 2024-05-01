@@ -21,7 +21,7 @@
 // rendering to the screen.
 
 
-#include <TFT_eSPI.h>                 // Include the graphics library (this includes the sprite functions)
+#include "TFT_eSPI.h"                 // Include the graphics library (this includes the sprite functions)
 
 TFT_eSPI    tft = TFT_eSPI();         // Create object "tft"
 

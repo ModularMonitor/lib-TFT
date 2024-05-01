@@ -12,6 +12,7 @@
   Created by Bodmer 2/12/16
   Last update by Bodmer 20/03/20
  ****************************************************/
+#pragma once
 
 #include "TFT_eSPI.h"
 

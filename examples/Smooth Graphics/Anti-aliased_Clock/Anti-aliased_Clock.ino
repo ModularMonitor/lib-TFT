@@ -12,7 +12,7 @@
 #define WIFI_PASSWORD  "Your_Password"
 
 #include <Arduino.h>
-#include <TFT_eSPI.h> // Master copy here: https://github.com/Bodmer/TFT_eSPI
+#include "TFT_eSPI.h" // Master copy here: https://github.com/Bodmer/TFT_eSPI
 #include <SPI.h>
 
 #include "NotoSansBold15.h"

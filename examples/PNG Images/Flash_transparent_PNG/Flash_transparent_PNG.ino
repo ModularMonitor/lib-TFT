@@ -32,7 +32,7 @@ PNG png; // PNG decoder instance
 
 // Include the TFT library - see https://github.com/Bodmer/TFT_eSPI for library information
 #include "SPI.h"
-#include <TFT_eSPI.h>              // Hardware-specific library
+#include "TFT_eSPI.h"              // Hardware-specific library
 TFT_eSPI tft = TFT_eSPI();         // Invoke custom library
 
 // Position variables must be global (PNGdec does not handle position coordinates)

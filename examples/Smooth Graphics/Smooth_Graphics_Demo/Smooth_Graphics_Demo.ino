@@ -1,7 +1,7 @@
 // Sketch to demonstrate smooth (anti-aliased) graphics functions:
 // Smooth graphics result in less pixel resolution jaggedness.
 
-#include <TFT_eSPI.h> // Master copy here: https://github.com/Bodmer/TFT_eSPI
+#include "TFT_eSPI.h" // Master copy here: https://github.com/Bodmer/TFT_eSPI
 
 TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h
 

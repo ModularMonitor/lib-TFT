@@ -22,7 +22,7 @@
 #define DWIDTH  240
 #define DHEIGHT 320
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 
 // Library instance
 TFT_eSPI    tft = TFT_eSPI();

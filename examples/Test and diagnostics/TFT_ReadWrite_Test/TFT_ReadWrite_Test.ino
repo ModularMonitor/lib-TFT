@@ -1,6 +1,6 @@
 // Walking 1 write and read pixel test
 
-#include <TFT_eSPI.h>
+#include "TFT_eSPI.h"
 #include <SPI.h>
 
 #define TDELAY 500

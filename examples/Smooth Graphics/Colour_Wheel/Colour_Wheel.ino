@@ -1,6 +1,6 @@
 // Arc drawing example - draw a colour wheel
 
-#include <TFT_eSPI.h>       // Include the graphics library
+#include "TFT_eSPI.h"       // Include the graphics library
 TFT_eSPI tft = TFT_eSPI();  // Create object "tft"
 
 uint16_t colors[12];

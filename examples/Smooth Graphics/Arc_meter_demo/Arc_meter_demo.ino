@@ -22,7 +22,7 @@
 
 
 #include <SPI.h>
-#include <TFT_eSPI.h> // Hardware-specific library
+#include "TFT_eSPI.h" // Hardware-specific library
 
 #ifdef DRAW_DIGITS
   #include "NotoSans_Bold.h"

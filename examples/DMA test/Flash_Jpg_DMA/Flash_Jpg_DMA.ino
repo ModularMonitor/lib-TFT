@@ -21,7 +21,7 @@
 
 // Include the TFT library https://github.com/Bodmer/TFT_eSPI
 #include "SPI.h"
-#include <TFT_eSPI.h>              // Hardware-specific library
+#include "TFT_eSPI.h"              // Hardware-specific library
 TFT_eSPI tft = TFT_eSPI();         // Invoke custom library
 
 // This next function will be called during decoding of the jpeg file to render each

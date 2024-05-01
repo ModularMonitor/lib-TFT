@@ -20,7 +20,7 @@
 #define ANGLE_INC 3
 int angle = 0;
 
-#include <TFT_eSPI.h>                 // Hardware-specific library
+#include "TFT_eSPI.h"                 // Hardware-specific library
 
 TFT_eSPI    tft = TFT_eSPI();         // Invoke library
 
