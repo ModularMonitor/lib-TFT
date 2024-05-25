@@ -5,13 +5,13 @@
 
 //#define TFT_INVERSION_OFF
 
-#define TFT_MISO 19 // (leave TFT SDO disconnected if other SPI devices share MISO)
-#define TFT_MOSI 23
-#define TFT_SCLK 18
-#define TFT_CS    15  // Chip select control pin
-#define TFT_DC    2  // Data Command control pin
-#define TFT_RST   4  // Reset pin (could connect to RST pin)
-#define TOUCH_CS 16
+#define TFT_MISO DISPLAY_MISO     // (leave TFT SDO disconnected if other SPI devices share MISO)
+#define TFT_MOSI DISPLAY_MOSI    
+#define TFT_SCLK DISPLAY_SCLK    
+#define TFT_CS   DISPLAY_CS        // Chip select control pin
+#define TFT_DC   DISPLAY_DC        // Data Command control pin
+#define TFT_RST  DISPLAY_RST       // Reset pin (could connect to RST pin)
+#define TOUCH_CS DISPLAY_TOUCH_CS
 
 
 #define LOAD_GLCD   // Font 1. Original Adafruit 8 pixel font needs ~1820 bytes in FLASH
